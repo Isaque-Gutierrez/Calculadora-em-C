@@ -1,0 +1,101 @@
+
+//nome do usuário do GitHub: Isaque-Gutierrez
+
+#include<stdio.h>
+#include <math.h>
+
+
+int main() 
+{
+	
+    int operacao;
+    int soma;
+    float numero1,numero2;
+    int multiplicacao;
+    int raiz;
+    int numero;
+    
+   printf("UNIVERSIDADE LASALLE\n");
+   printf("ISAQUE GUTIERREZ ANDRADE\n");
+   printf("MATRICULA 202221658\n");
+   
+   
+   
+  // ESCOLHENDO A OPERAÇÃO
+   printf("Escolha a operacao:\n");
+   
+   //INSERINDO A OPERAÇÃO DESEJADA
+   printf(" Digite 1 para raiz quadrada:\n DIgite 2 para Multiplicacao:\n");
+   scanf("%d",&operacao);
+   
+ //condicional para validar a entrada correta do valor corresponde a operação  
+if(operacao>2<1){
+   
+   
+   // INICIO DA OPERAÇÃO DE RAIZ QUADRADA
+   
+   if(operacao==1){
+   
+    
+   		// AMOSTRANDO NA TELA DO CONSOLE A OPERAÇÃO ESCOLHIDA 
+   		printf("Operacao Raiz quadrada escolhida\n");
+   		 
+   		//ISERINDO O VALOR DA RAIZ
+   		printf("digite o numero\n");
+   		scanf("%d",&numero);
+   		raiz=sqrt(numero);
+   		
+   		//AMOSTRANDO O VALOR DA RAIZ QUADRADA
+   		printf("Raiz=%d\n",raiz);
+ 	
+	 
+   }
+ 
+   else {  
+	   
+    }
+   
+  
+   //INICIO DA OPERAÇÃO DE MULTIPLICAÇÃO
+   
+   if(operacao==2){
+   	
+   		// AMOSTRANDO NA TELA DO CONSOLE A OPERAÇÃO ESCOLHIDA 
+   		
+   		printf("Operacao de Multiplicao escolhida\n");
+   		
+   		//usuario escolherá o 1ª valor
+   		printf("Digite o primeiro número:\n");
+   		 scanf("%f",&numero1);
+   		 
+   		 //usuario escolherá o 2ª valor
+  		 printf("digite o segundo número:\n");
+   		 scanf("%f",&numero2);
+   		 
+   		 //CALCULO DA OPERAÇÃO DE MULTIPLICAO
+    	 multiplicacao=numero1*numero2;
+    	
+		 // AMOSTRANDO O RESULTADO DA MULTIPLICAÇÃO
+   		 printf("Multiplicacao=%d\n\n",multiplicacao);
+   			 
+   	
+   }
+ 
+   else {    
+     		 
+   }
+   
+}
+  else {    
+     		 //MENSAGEM PARA AVISAR AO USUARIO QUE O VALOR PARA ESCOLHER A OPERAÇÃO É INVALIDO, E QUE SERÁ RETORNADO AO INÍCIO
+    
+     printf("OPCAO INVALIDA, DIGITE NOVAMENTE O VALOR DA OPERACAO\n\n");
+      
+   }
+	 //avisando ao funcionário que estará retornando ao incio da calculadora
+	printf("RETORNANDO AO INICIO\n\n");
+	
+	 return main ();
+    
+    
+}
